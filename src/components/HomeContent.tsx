@@ -1,3 +1,5 @@
+import { LinkedinLogo } from "phosphor-react"
+
 const HomeContent = () => {
   return (
     <div className="flex h-main">
@@ -13,7 +15,8 @@ const HomeContent = () => {
           </div>
         </div>
       </div>
-      <div className="w-right h-full"></div>
+      <div className="w-right h-full">
+      </div>
     </div>
   )
 }
