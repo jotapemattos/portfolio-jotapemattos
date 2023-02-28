@@ -9,7 +9,7 @@ const Header = ({isOpen, setIsOpen}: HeaderProps) => {
   
 
   return (
-    <div className='w-full min-h-header h-header flex items-center justify-between sticky z-0'>
+    <div className='w-full min-h-header bg-main-color/80 h-header flex items-center justify-between sticky top-0 left-0 right-0 z-10'>
       <div className="w-1/2 flex p-4 lg:p-12 mt-10">
         <div className="w-14 h-14">
           <img src="/header-logo.svg" alt=""/>
@@ -18,15 +18,12 @@ const Header = ({isOpen, setIsOpen}: HeaderProps) => {
       <div className="w-1/3 lg:w-1/2 xl:w-1/2 p-4 lg:p-12 mt-10 hidden lg:flex xl:flex items-baseline justify-end lg:justify-end xl:justify-end text-slate-200">
           <div className="w-full flex items-center justify-end font-main text-sm font-bold lg:gap-10">
             <div className="flex gap-2 cursor-pointer hover:text-contrast-color transition-colors duration-300">
-              <p className="text-contrast-color">01.</p>
               <p>Home</p>
             </div>
             <div className="flex gap-2 cursor-pointer hover:text-contrast-color transition-colors duration-300">
-              <p className="text-contrast-color">02.</p>
               <p>Projects</p>
             </div>
             <div className="flex gap-2 cursor-pointer hover:text-contrast-color transition-colors duration-300">
-              <p className="text-contrast-color">03.</p>
               <p>Contact</p>
             </div>
           </div>

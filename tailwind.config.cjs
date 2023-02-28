@@ -16,6 +16,9 @@ module.exports = {
       colors: {
         'contrast-color': '#faf1a0'
       },
+      minHeight: {
+        'main': '93%'
+      },
       height: {
         'header': '7%',
         'mobile': '86%',
@@ -24,7 +27,11 @@ module.exports = {
       width: {
         'left': '10%',
         'center': '80%',
-        'right': '10%'
+        'right': '10%',
+        'line': '1px'
+      },
+      transitionTimingFunction: {
+        'up': 'all 0.25s cubic-bezier(0.645,0.045,0.355,1)'
       }
     },
   },

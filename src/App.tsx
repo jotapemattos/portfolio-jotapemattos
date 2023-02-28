@@ -1,8 +1,7 @@
-import { Divide } from 'phosphor-react'
 import { useState } from 'react'
 import Header from './components/Header'
-import HomeContent from './components/HomeContent'
 import MobileList from './components/MobileList'
+import Main from './pages/Main'
 import './styles/index.css'
 
 function App() {
@@ -14,7 +13,7 @@ function App() {
       {isOpen && (
         <MobileList isOpen={isOpen}/>
       )}
-      <HomeContent/>
+      <Main/>
     </div>
   )
 }
