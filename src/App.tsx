@@ -8,7 +8,7 @@ function App() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className='bg-main-color w-screen h-screen z-0'>
+    <div id='home' className='bg-main-color min-w-screen min-h-screen h-screen'>
       <Header isOpen={isOpen} setIsOpen={setIsOpen}/>
       {isOpen && (
         <MobileList isOpen={isOpen}/>

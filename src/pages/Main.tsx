@@ -4,7 +4,7 @@ import HomeContent from '../components/HomeContent'
 
 const Main = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-main h-main min-w-screen gap-4">
+    <div className="h-screen min-h-screen w-full mt-12 py-10 flex flex-col items-center justify-between bg-main-color">
       <HomeContent/>
       <CurrentProject/>
     </div>

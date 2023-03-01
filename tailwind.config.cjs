@@ -22,13 +22,15 @@ module.exports = {
       height: {
         'header': '7%',
         'mobile': '86%',
-        'main': '93%'
+        'main': '93%',
+        'line': '1px'
       },
       width: {
-        'left': '10%',
+        'left': '5%',
         'center': '80%',
-        'right': '10%',
-        'line': '1px'
+        'right': '5%',
+        'line': '1px',
+        'teste': '99%'
       },
       transitionTimingFunction: {
         'up': 'all 0.25s cubic-bezier(0.645,0.045,0.355,1)'
