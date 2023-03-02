@@ -14,28 +14,32 @@ module.exports = {
         'main-color': '#00203FFF',
       },
       colors: {
-        'contrast-color': '#faf1a0'
+        'contrast-color': '#03fcb1'
       },
       minHeight: {
-        'main': '93%'
+        'main': '93%',
+        'footer': '75%'
       },
       height: {
         'header': '7%',
         'mobile': '86%',
         'main': '93%',
-        'line': '1px'
+        'line': '1px',
+        'image': '95%'
       },
       width: {
         'left': '5%',
         'center': '80%',
         'right': '5%',
         'line': '1px',
-        'teste': '99%'
+        'image': '95%'
       },
       transitionTimingFunction: {
         'up': 'all 0.25s cubic-bezier(0.645,0.045,0.355,1)'
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar')({ nocompatible: true })
+  ],
 }

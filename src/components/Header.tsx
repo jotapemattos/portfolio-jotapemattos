@@ -9,10 +9,10 @@ const Header = ({isOpen, setIsOpen}: HeaderProps) => {
   
 
   return (
-    <div className='min-w-full min-h-header bg-main-color py-10 h-header flex items-center justify-between fixed top-0 left-0 right-0 z-10'>
+    <div className='header min-w-full min-h-header py-10 h-header flex items-center justify-between fixed top-0 left-0 right-0 z-10'>
       <div className="w-1/2 flex p-4 lg:p-12">
         <div className="w-14 h-14">
-          <img src="/header-logo.svg" alt=""/>
+          <img src="/logo.svg" alt=""/>
         </div>
       </div>
       <div className="w-1/3 lg:w-1/2 xl:w-1/2 p-4 lg:p-12 hidden lg:flex xl:flex items-baseline justify-end lg:justify-end xl:justify-end text-slate-200">
@@ -35,14 +35,14 @@ const Header = ({isOpen, setIsOpen}: HeaderProps) => {
       className="w-full h-full"
       onClick={() => setIsOpen(true)}
     >
-      <List size={32} weight='fill' color="#faf1a0"/>
+      <List size={32} weight='fill' color="#03fcb1"/>
     </button>
   </div></div>
         ):(
           <div>
             <div className='w-1/3 p-4 lg:p-12  flex items-center justify-center'>
             <button onClick={() => setIsOpen(false)}>
-              <X size={32} weight='fill' color='#faf1a0'/>
+              <X size={32} weight='fill' color='#03fcb1'/>
             </button>
           </div>
           </div>

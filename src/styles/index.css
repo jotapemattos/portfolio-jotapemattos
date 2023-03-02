@@ -7,3 +7,52 @@
 html {
   scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6b7280;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #374151;
+}
+
+.header {
+  background: rgb(35, 34, 84);
+  background: radial-gradient(
+    circle,
+    rgba(35, 34, 84, 1) 0%,
+    rgba(30, 42, 56, 1) 100%
+  );
+}
+
+.main-content {
+  background: rgb(35, 34, 84);
+  background: radial-gradient(
+    circle,
+    rgba(35, 34, 84, 1) 0%,
+    rgba(30, 42, 56, 1) 100%
+  );
+}
+
+.projects-page {
+  background: rgb(35, 34, 84);
+  background: radial-gradient(
+    circle,
+    rgba(35, 34, 84, 1) 0%,
+    rgba(30, 42, 56, 1) 100%
+  );
+}
+
+.footer {
+  background: rgb(35, 34, 84);
+  background: radial-gradient(
+    circle,
+    rgba(35, 34, 84, 1) 0%,
+    rgba(30, 42, 56, 1) 100%
+  );
+}
