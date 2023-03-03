@@ -1,4 +1,6 @@
 import { List, X } from "phosphor-react"
+import { BsList } from 'react-icons/bs'
+import { AiOutlineClose } from 'react-icons/ai'
 
 interface HeaderProps {
   isOpen: boolean,
@@ -36,7 +38,7 @@ const Header = ({isOpen, setIsOpen}: HeaderProps) => {
                 className="w-full h-full"
                 onClick={() => setIsOpen(true)}
               >
-                <List size={32} weight='fill' color="#03fcb1"/>
+                <BsList size={32} color="#03fcb1"/>
               </button>
             </div>
           </div>
@@ -44,7 +46,7 @@ const Header = ({isOpen, setIsOpen}: HeaderProps) => {
           <div>
             <div className='w-1/3 p-4 lg:p-12  flex items-center justify-center relative'>
             <button onClick={() => setIsOpen(false)}>
-              <X size={32} weight='fill' color='#03fcb1'/>
+              <AiOutlineClose size={32} color='#03fcb1'/>
             </button>
           </div>
           </div>
