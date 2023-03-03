@@ -25,13 +25,13 @@ module.exports = {
         'project': '85%'
       },
       height: {
-        'header': '7%',
         'mobile': '86%',
         'main': '93%',
         'line': '1px',
         'image': '95%',
         'card': '40%',
-        'project': '85%'
+        'project': '85%',
+        '2-screen': '200vh'
       },
       minWidth: {
         'card': '45%',

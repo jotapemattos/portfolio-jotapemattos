@@ -1,18 +1,16 @@
 import { List, X } from "phosphor-react"
+import { useState } from "react"
+import MobileList from "./MobileList"
 
-interface HeaderProps {
-  isOpen: boolean,
-  setIsOpen: (b: boolean) => void
-}
 
-const Header = ({isOpen, setIsOpen}: HeaderProps) => {
-  
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className='header min-w-full min-h-header py-10 h-header flex items-center justify-between fixed top-0 left-0 right-0 z-10'>
+    <div className='header min-w-full py-10 h-10 flex items-center justify-between fixed top-0 left-0 right-0 z-10'>
       <div className="w-1/2 flex p-4 lg:p-12">
         <div className="w-14 h-14">
-          <img src="/logo.svg" alt=""/>
+          <a href="#home"><img src="/logo.svg" alt=""/></a>
         </div>
       </div>
       <div className="w-1/3 lg:w-1/2 xl:w-1/2 p-4 lg:p-12 hidden lg:flex xl:flex items-baseline justify-end lg:justify-end xl:justify-end text-slate-200">
@@ -33,7 +31,6 @@ const Header = ({isOpen, setIsOpen}: HeaderProps) => {
           <div>
             <div className="w-1/3 p-4 lg:p-12 lg:hidden flex items-center justify-center relative">
               <button 
-                className="w-full h-full"
                 onClick={() => setIsOpen(true)}
               >
                 <List size={32} weight='fill' color="#03fcb1"/>
@@ -47,6 +44,7 @@ const Header = ({isOpen, setIsOpen}: HeaderProps) => {
               <X size={32} weight='fill' color='#03fcb1'/>
             </button>
           </div>
+            <MobileList isOpen={isOpen} setIsOpen={setIsOpen}/>
           </div>
         )
       }
