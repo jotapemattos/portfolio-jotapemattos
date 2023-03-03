@@ -1,9 +1,10 @@
 import React from 'react'
+import SocialMedia from './SocialMedia'
 
 const Footer = () => {
   return (
     <div id='contact' className='footer min-h-footer h-3/4 w-full flex items-center justify-center'>
-      <div className='w-4/5 h-full flex flex-col items-center justify-between pt-36 text-slate-300'>
+      <div className='w-4/5 h-full flex flex-col items-center justify-between pt-20 lg:pt-36 text-slate-300'>
         <div className='flex flex-col items-center justify-center gap-8'>
           <h1 className="text-4xl text-center font-poppins font-extrabold">Get in touch</h1>
           <p className='w-3/4 text-center text-base font-poppins'>If you're interested in working with me, feel free to contact by clicking on the button below.</p>
@@ -11,7 +12,8 @@ const Footer = () => {
             <a href="https://api.whatsapp.com/send?phone=5511975845050" target="_blank">Contact me</a>
           </button>
         </div>
-        <div className='flex h-auto items-center pb-8 text-center font-poppins'>
+        <div><SocialMedia/></div>
+        <div className='flex h-auto items-center pb-2 lg:pb-8 text-center font-poppins'>
           <p>Built with <a href="https://reactjs.org/" className='hover:text-contrast-color hover:-translate-y-1 hover:scale-110 transition-all duration-300'>React</a> and <a href="https://tailwindcss.com/" className='hover:text-contrast-color hover:-translate-y-1 hover:scale-110 transition-all duration-300'>Tailwind</a></p>
         </div>
       </div>

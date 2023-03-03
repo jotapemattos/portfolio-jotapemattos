@@ -3,8 +3,8 @@ import { BsGithub } from 'react-icons/bs'
 
 const SocialMedia = () => {
   return (
-    <div className="w-right h-full flex justify-end fixed top-0 right-24 z-5">
-      <div className="flex flex-col items-center justify-end gap-8">
+    <div className="w-full lg:w-right h-full flex justify-end lg:fixed lg:top-0 lg:right-24 z-5">
+      <div className="flex lg:flex-col items-center justify-end gap-8">
         <a href="https://github.com/jotapemattos" target='_blank'>
           <BsGithub size={24} color="#A5B4FC" className="hover:fill-contrast-color hover:-translate-y-1 hover:scale-110 transition-all duration-300"/>
         </a>
@@ -14,7 +14,7 @@ const SocialMedia = () => {
         <a href="mailto:jpmrc49@gmail.com" target='_blank'>
           <Envelope size={26} color="#A5B4FC" weight="fill" className="hover:fill-contrast-color hover:-translate-y-1 hover:scale-110 transition-all duration-300"/>
         </a>
-        <div className="w-line h-28 bg-indigo-300"></div>
+        <div className="w-line hidden lg:flex h-28 bg-indigo-300"></div>
       </div>
     </div>
   )
