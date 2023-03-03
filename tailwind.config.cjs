@@ -6,8 +6,7 @@ module.exports = {
   ],
   theme: {
     fontFamily:{
-      'main': ['Roboto Mono', 'monospace'],
-      'poppins': ['Poppins', 'sans-serif']
+      'main': ['Inter', 'sans-serif'],
     },
     extend: {
       backgroundColor: {
@@ -22,7 +21,7 @@ module.exports = {
       minHeight: {
         'main': '93%',
         'footer': '75%',
-        'project': '85%'
+        'project': '95%'
       },
       height: {
         'mobile': '86%',
@@ -30,8 +29,8 @@ module.exports = {
         'line': '1px',
         'image': '95%',
         'card': '40%',
-        'project': '85%',
-        '2-screen': '200vh'
+        'project': '95%',
+        '2-screen': '190vh'
       },
       minWidth: {
         'card': '45%',
