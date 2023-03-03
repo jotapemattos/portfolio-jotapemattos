@@ -30,14 +30,9 @@ const Header = ({isOpen, setIsOpen}: HeaderProps) => {
       </div>
       {!isOpen ? 
         (
-          <div><div className="w-1/3 p-4 lg:p-12 lg:hidden flex items-center justify-center">
-    <button 
-      className="w-full h-full"
-      onClick={() => setIsOpen(true)}
-    >
-      <List size={32} weight='fill' color="#03fcb1"/>
-    </button>
-  </div></div>
+          <div className="text-slate-300">
+            AAAAAAAAAAA
+          </div>
         ):(
           <div>
             <div className='w-1/3 p-4 lg:p-12  flex items-center justify-center'>
