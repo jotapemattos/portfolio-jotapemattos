@@ -3,7 +3,7 @@ import { BsGithub } from 'react-icons/bs'
 
 const SocialMedia = () => {
   return (
-    <div className="w-full lg:w-right h-full flex justify-end lg:fixed lg:top-0 lg:right-24 z-5">
+    <div className="w-full lg:w-right h-full flex justify-end lg:fixed lg:top-0 lg:right-24">
       <div className="flex lg:flex-col items-center justify-end gap-8">
         <a href="https://github.com/jotapemattos" target='_blank'>
           <BsGithub size={24} color="#A5B4FC" className="hover:fill-contrast-color hover:-translate-y-1 hover:scale-110 transition-all duration-300"/>
