@@ -21,8 +21,8 @@ export const CurrentProject = () => {
               <div className='w-full lg:w-96 flex flex-col justify-between gap-8'>
                 <p className='w-full lg:w-96 text-justify text-lg text-slate-300'>Project developed for my portfolio. However, it was built with the intention of impacting some student friends, explaining how the method works and bringing a nice interface. I hope it helps in some way!</p>
                 <div className='flex w-full justify-around'>
-                  <a href=""><BsGithub size={24} color="#A5B4FC" className="hover:fill-contrast-color hover:-translate-y-1 hover:scale-110 transition-all duration-300"/></a>
-                  <a href="https://pomodoro-app-liart.vercel.app/"><ArrowSquareOut size={26} color="#A5B4FC" weight="fill" className="hover:fill-contrast-color hover:-translate-y-1 hover:scale-110 transition-all duration-300"/></a>
+                  <a href="https://github.com/jotapemattos/pomodoro-app" target='_blank'><BsGithub size={24} color="#A5B4FC" className="hover:fill-contrast-color hover:-translate-y-1 hover:scale-110 transition-all duration-300"/></a>
+                  <a href="https://pomodoro-app-liart.vercel.app/" target='_blank'><ArrowSquareOut size={26} color="#A5B4FC" weight="fill" className="hover:fill-contrast-color hover:-translate-y-1 hover:scale-110 transition-all duration-300"/></a>
                 </div>
               </div>
             </div>
@@ -35,8 +35,8 @@ export const CurrentProject = () => {
               <div className='w-full lg:w-96 flex flex-col justify-between gap-8'>
                 <p className='w-full lg:w-96 text-justify text-lg text-slate-300'>Project developed for my portfolio. However, it was built with the intention of impacting some student friends, explaining how the method works and bringing a nice interface. I hope it helps in some way!</p>
                 <div className='flex w-full justify-around'>
-                  <a href=""><BsGithub size={24} color="#A5B4FC" className="hover:fill-contrast-color hover:-translate-y-1 hover:scale-110 transition-all duration-300"/></a>
-                  <a href="https://mymoviedb.vercel.app/"><ArrowSquareOut size={26} color="#A5B4FC" weight="fill" className="hover:fill-contrast-color hover:-translate-y-1 hover:scale-110 transition-all duration-300"/></a>
+                  <a href="https://github.com/jotapemattos/mymdb" target='_blank'><BsGithub size={24} color="#A5B4FC" className="hover:fill-contrast-color hover:-translate-y-1 hover:scale-110 transition-all duration-300"/></a>
+                  <a href="https://mymoviedb.vercel.app/" target='_blank'><ArrowSquareOut size={26} color="#A5B4FC" weight="fill" className="hover:fill-contrast-color hover:-translate-y-1 hover:scale-110 transition-all duration-300"/></a>
                 </div>
               </div>
             </div>

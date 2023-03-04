@@ -1,3 +1,4 @@
+import { AnimatePresence } from 'framer-motion'
 import { CurrentProject } from './components/CurrentProject'
 import Footer from './components/Footer'
 import Header from './components/Header'
@@ -9,9 +10,11 @@ function App() {
   return (
     <div id='home' className='main-content min-w-screen min-h-screen h-screen'>
       <Header/>
-      <HomeContent/>
-      <CurrentProject/>
-      <Footer/>
+      <AnimatePresence initial={false}>
+        <HomeContent/>
+        <CurrentProject/>
+        <Footer/>
+      </AnimatePresence>
     </div>
   )
 }

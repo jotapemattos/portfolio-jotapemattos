@@ -7,7 +7,7 @@ interface MobileListProps {
 
 const MobileList = ({isOpen, setIsOpen}: MobileListProps) => {
   return (
-    <div className='mobile-list w-screen h-96 shadow-xl text-slate-200 absolute left-0'>
+    <div className='mobile-list w-screen h-screen shadow-xl text-slate-200 absolute left-0'>
       {isOpen && (<div className='w-screen h-full z-50 text-slate-200'>
       <div className="w-full h-full py-10 flex flex-col items-center justify-evenly gap-8 font-main text-sm font-extrabold">
             <div className="flex gap-2 cursor-pointer hover:text-contrast-color transition-colors duration-300">
