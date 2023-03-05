@@ -30,7 +30,7 @@ html {
   opacity: 0.9;
 }
 
-.main-content {
+.home {
   background: rgb(35, 34, 84);
   background: radial-gradient(
     circle,
@@ -67,6 +67,15 @@ html {
 }
 
 .mobile-list {
+  background: rgb(35, 34, 84);
+  background: radial-gradient(
+    circle,
+    rgba(35, 34, 84, 1) 0%,
+    rgba(30, 42, 56, 1) 100%
+  );
+}
+
+.projects {
   background: rgb(35, 34, 84);
   background: radial-gradient(
     circle,
