@@ -1,5 +1,6 @@
 import { List, X } from "phosphor-react"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 import MobileList from "./MobileList"
 
 
@@ -9,9 +10,11 @@ const Header = () => {
   return (
     <div className='header min-w-full py-10 h-10 flex items-center justify-between fixed top-0 left-0 right-0 z-10'>
       <div className="w-1/2 flex p-4 lg:p-12">
+        <Link to='/'>
         <div className="w-14 h-14">
-          <a href="#home"><img src="/logo.svg" alt=""/></a>
+          <img src="/logo.svg" alt=""/>
         </div>
+        </Link>
       </div>
       <div className="w-1/3 lg:w-1/2 xl:w-1/2 p-4 lg:p-12 hidden lg:flex xl:flex items-baseline justify-end lg:justify-end xl:justify-end text-slate-200">
           <div className="w-full flex items-center justify-end font-main text-sm font-bold lg:gap-10">
