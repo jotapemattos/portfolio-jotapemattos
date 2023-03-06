@@ -12,6 +12,10 @@ const movieDescription = 'MyMDB is a search application that simulates IMDB. You
 
 export const CurrentProject = () => {
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0)
+  }
+
   const {ref, inView} = useInView({threshold: 0.05})
   const firstAnimation = useAnimation()
   const secondAnimation = useAnimation()
@@ -82,8 +86,8 @@ export const CurrentProject = () => {
         </div>
         <div className="flex w-full xl:w-4/5 justify-center xl:mr-10 md:pt-10 lg:pt-0">
           <div className="w-full flex justify-center xl:justify-end">
-            <Link to='/moreprojects'>
-              <button className="flex items-center gap-2 text-md py-2 px-8 text-contrast-color border border-contrast-color rounded-sm p-2 hover:bg-contrast-color/20 transition-colors duration-200">
+            <Link preventScrollReset={true} to='/moreprojects'>
+              <button onClick={scrollToTop} className="flex items-center gap-2 text-md py-2 px-8 text-contrast-color border border-contrast-color rounded-sm p-2 hover:bg-contrast-color/20 transition-colors duration-200">
                 More projects 
                 <ArrowSquareOut size={20} color="#03fcb1" weight="fill" />
               </button>

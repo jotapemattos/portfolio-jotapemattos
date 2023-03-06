@@ -7,6 +7,7 @@ import { ArrowCircleLeft, ArrowSquareOut } from 'phosphor-react'
 import { Link } from 'react-router-dom'
 import { motion as m } from 'framer-motion'
 
+
 const portfolioDescription = 'It was built to show to people my projects and let them get in touch easily! Also, I developed this one to improve my react and tailwind skills, introducing a charming UI.'
 
 const pomodoroDescription = 'Project developed for my portfolio. However, it was built with the intention of impacting some student friends, explaining how the method works and bringing a nice interface. I hope it helps in some way!'
