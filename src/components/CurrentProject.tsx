@@ -45,7 +45,7 @@ export const CurrentProject = () => {
         </div>
         <div className="flex w-full md:w-4/5 justify-center lg:mr-10">
           <div className="w-full flex justify-center lg:justify-end">
-            <Link to='/morep'>
+            <Link to='/moreprojects'>
               <button className="flex items-center gap-2 text-md py-2 px-8 text-contrast-color border border-contrast-color rounded-sm p-2 hover:bg-contrast-color/20 transition-colors duration-200">
                 More projects 
                 <ArrowSquareOut size={20} color="#03fcb1" weight="fill" />

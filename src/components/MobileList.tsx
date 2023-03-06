@@ -1,5 +1,3 @@
-import { X } from 'phosphor-react'
-
 interface MobileListProps {
   isOpen: boolean,
   setIsOpen: (b:boolean) => void

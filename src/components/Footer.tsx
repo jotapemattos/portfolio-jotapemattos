@@ -1,5 +1,4 @@
 import { ArrowCircleUp } from 'phosphor-react'
-import React from 'react'
 import SocialMedia from './SocialMedia'
 
 const Footer = () => {
@@ -13,7 +12,7 @@ const Footer = () => {
             <a href="https://api.whatsapp.com/send?phone=5511975845050" target="_blank">Contact me</a>
           </button>
         </div>
-        <a href="#home"><ArrowCircleUp size={32} color="#A5B4FC" weight="fill" className="lg:hover:fill-contrast-color animate-bounce cursor-pointer"/></a>
+        <a href="#home"><ArrowCircleUp size={32} color="#A5B4FC" weight="fill" className="lg:hover:fill-contrast-color animate-bounce cursor-pointer transition-colors duration-200"/></a>
         <div className='flex lg:hidden'><SocialMedia/></div>
         <div className='flex h-auto items-center pb-2 lg:pb-8 text-center font-main'>
           <p>Built with <a href="https://reactjs.org/" className='hover:text-contrast-color hover:-translate-y-1 hover:scale-110 transition-all duration-300'>React</a> and <a href="https://tailwindcss.com/" className='hover:text-contrast-color hover:-translate-y-1 hover:scale-110 transition-all duration-300'>Tailwind</a></p>
