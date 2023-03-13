@@ -2,6 +2,13 @@ import { ArrowCircleUp } from 'phosphor-react'
 import SocialMedia from './SocialMedia'
 
 const Footer = () => {
+
+  const goTop = () => {
+    window.scrollTo({
+      top: 0,
+    })
+  }
+
   return (
     <div id='contact' className='footer min-h-footer max-[320px]:h-full max-[375px]:h-full lg:h-1200px xl:h-3/4 w-full flex items-center justify-center'>
       <div className='w-4/5 h-full flex flex-col items-center justify-between max-[320px]:pt-10 max-[375px]:pt-20 md:pt-10 lg:pt-96 xl:pt-44 text-slate-300 gap-20'>
@@ -12,7 +19,13 @@ const Footer = () => {
             <a href="https://api.whatsapp.com/send?phone=5511975845050" target="_blank">Contact me</a>
           </button>
         </div>
-        <a href="#home"><ArrowCircleUp size={32} color="#A5B4FC" weight="fill" className="lg:hover:fill-contrast-color animate-bounce cursor-pointer transition-colors duration-200"/></a>
+          <ArrowCircleUp 
+            onClick={goTop}
+            size={32} 
+            color="#A5B4FC" 
+            weight="fill" 
+            className="lg:hover:fill-contrast-color animate-bounce cursor-pointer transition-colors duration-200"
+          />
         <div className='flex lg:hidden'>
           <SocialMedia/>
         </div>
