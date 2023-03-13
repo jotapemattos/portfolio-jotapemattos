@@ -39,7 +39,7 @@ export const CurrentProject = () => {
 
   return (
     <div id="projects" className="projects-page min-h-full h-2-screen md:h-[1400px] lg:h-full lg:min-h-full w-full flex justify-center">
-      <div className="w-full md:w-4/5 max-[414px]:h-4/5 lg:h-full flex flex-col items-center lg:items-start xl:items-center justify-between p-4 gap-10">
+      <div className="w-full md:w-4/5 max-[375px]:h-full max-[390px]:h-full max-[414px]:h-4/5 lg:h-full flex flex-col items-center lg:items-start xl:items-center justify-between p-4 gap-10">
 
         <div className="flex w-full items-center justify-start md:pl-10">
           <span className="text-3xl text-slate-300 text-center font-main font-extrabold">{`<`}</span>
