@@ -25,7 +25,7 @@ export const Projects = () => {
           <ArrowCircleLeft size={28} color="#cbd5e1" weight="fill"/>Back
         </button>
       </Link>
-      <div className="px-6 lg:px-28 pt-6 grid grid-cols-1 xl:grid-cols-2 items-center justify-between lg:gap-6">
+      <div className="px-6 lg:px-28 pt-6 grid grid-cols-1 2xl:grid-cols-2 items-center justify-between lg:gap-6">
         <m.div 
           initial={{ x: '50vw', opacity: 0}}
           animate={{ x: 0, opacity: 1 }}
@@ -36,8 +36,8 @@ export const Projects = () => {
           <img src={portfolio} alt="" className='lg:w-1/2 lg:h-full w-full'/>
           <div className='w-full h-96 py-4 flex flex-col items-start justify-start gap-16'>
                 <h1 className='text-3xl font-main text-slate-300 font-bold hidden lg:block'>01. Portfolio</h1>
-            <div className='w-full lg:w-96 flex flex-col justify-between gap-8'>
-              <p className='w-full lg:w-96 text-justify text-lg text-slate-300'>{portfolioDescription}</p>
+            <div className='w-full lg:w-96 flex flex-col justify-between lg:justify-center gap-8'>
+              <p className='w-full lg:w-96 text-justify text-lg text-slate-300 xl:h-36'>{portfolioDescription}</p>
               <div className='flex w-full justify-around'>
                 <a href="https://github.com/jotapemattos/portfolio-jotapemattos" target='_blank'><BsGithub size={24} color="#A5B4FC" className="hover:fill-contrast-color hover:-translate-y-1 hover:scale-110 transition-all duration-300"/></a>
                 <a href="https://jotapemattos-portfolio.vercel.app/" target='_blank'><ArrowSquareOut size={26} color="#A5B4FC" weight="fill" className="hover:fill-contrast-color hover:-translate-y-1 hover:scale-110 transition-all duration-300"/></a>
@@ -55,8 +55,8 @@ export const Projects = () => {
           <img src={pomodoro} alt="" className='lg:w-1/2 lg:h-full w-full'/>
           <div className='w-full h-96 py-4 flex flex-col items-start justify-start gap-16'>
                 <h1 className='text-3xl font-main text-slate-300 font-bold hidden lg:block'>02. Pomodoro App</h1>
-            <div className='w-full lg:w-96 flex flex-col justify-between gap-8'>
-              <p className='w-full lg:w-96 text-justify text-lg text-slate-300'>{pomodoroDescription}</p>
+            <div className='w-full lg:w-96 flex flex-col justify-between lg:justify-center gap-8'>
+              <p className='w-full lg:w-96 text-justify text-lg text-slate-300 xl:h-36'>{pomodoroDescription}</p>
               <div className='flex w-full justify-around'>
                 <a href="https://github.com/jotapemattos/pomodoro-app" target='_blank'><BsGithub size={24} color="#A5B4FC" className="hover:fill-contrast-color hover:-translate-y-1 hover:scale-110 transition-all duration-300"/></a>
                 <a href="https://pomodoro-app-liart.vercel.app/" target='_blank'><ArrowSquareOut size={26} color="#A5B4FC" weight="fill" className="hover:fill-contrast-color hover:-translate-y-1 hover:scale-110 transition-all duration-300"/></a>
@@ -75,7 +75,7 @@ export const Projects = () => {
           <div className='w-full h-96 py-4 flex flex-col items-start justify-start gap-16'>
                 <h1 className='text-3xl font-main text-slate-300 font-bold hidden lg:block'>03. Movie App</h1>
             <div className='w-full lg:w-96 flex flex-col justify-between gap-8'>
-              <p className='w-full lg:w-96 text-justify text-lg text-slate-300'>{movieDescription}</p>
+              <p className='w-full lg:w-96 text-justify text-lg text-slate-300 xl:h-36'>{movieDescription}</p>
               <div className='flex w-full justify-around'>
                 <a href="https://github.com/jotapemattos/mymdb" target='_blank'><BsGithub size={24} color="#A5B4FC" className="hover:fill-contrast-color hover:-translate-y-1 hover:scale-110 transition-all duration-300"/></a>
                 <a href="https://mymoviedb.vercel.app/" target='_blank'><ArrowSquareOut size={26} color="#A5B4FC" weight="fill" className="hover:fill-contrast-color hover:-translate-y-1 hover:scale-110 transition-all duration-300"/></a>
@@ -93,8 +93,8 @@ export const Projects = () => {
           <img src={comingsoon} alt="" className='lg:w-1/2 lg:h-full w-full'/>
           <div className='w-full h-96 py-4 flex flex-col items-start justify-start gap-16'>
                 <h1 className='text-3xl font-main text-slate-300 font-bold hidden lg:block'>04. Coming Soon</h1>
-            <div className='w-full lg:w-96 flex flex-col justify-between gap-8'>
-              <p className='w-full lg:w-96 text-justify text-lg text-slate-300'>{comingSoonDescription}</p>
+            <div className='w-full lg:w-96 flex flex-col justify-between lg:justify-center gap-8'>
+              <p className='w-full lg:w-96 text-justify text-lg text-slate-300 xl:h-36'>{comingSoonDescription}</p>
               <div className='flex w-full justify-around'>
                 <a href="#" target='_blank'><BsGithub size={24} color="#A5B4FC" className="hover:fill-contrast-color hover:-translate-y-1 hover:scale-110 transition-all duration-300"/></a>
                 <a href="#" target='_blank'><ArrowSquareOut size={26} color="#A5B4FC" weight="fill" className="hover:fill-contrast-color hover:-translate-y-1 hover:scale-110 transition-all duration-300"/></a>
