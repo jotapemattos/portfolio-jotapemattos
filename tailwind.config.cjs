@@ -9,6 +9,22 @@ module.exports = {
       'main': ['Inter', 'sans-serif'],
     },
     extend: {
+      animation: {
+        typing: 'typing 2s steps(17)'
+      },
+      keyframes: {
+        typing: {
+          '0%': {
+            width: '0',
+          },
+          '80%': {
+            width: 'full',
+          },
+          '100%': {
+            width: 'full'
+          }
+        }
+      },
       backgroundColor: {
         'main-color': '#232254',
         'second-color': '#1e2a38'
