@@ -21,10 +21,7 @@ const HomeContent = () => {
             className="text-3xl md:text-5xl text-indigo-300 font-extrabold font-main w-4/5 md:w-full">Digital Craftsman.
           </m.h2>
 
-          <h3
-            /* initial={{ x: '-50vw', opacity: 0}}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.9 }}  */ 
+          <h3 
             className="text-xl md:text-xl text-indigo-300 font-extrabold font-main w-4/5 md:w-[17ch] border-r-2 border-indigo-200 whitespace-nowrap overflow-hidden animate-typing">Front-end Developer
           </h3>
 
