@@ -6,16 +6,16 @@ interface IsOpenProps {
 
 const MobileMenu = ({ setIsOpen }: IsOpenProps) => {
   return (
-    <div className="w-full h-screen left-0  absolute p-4 text-white flex flex-col items-end justify-start">
-      <span className="flex flex-col pt-10 gap-20 items-end text-white text-2xl font-bold">
+    <div className="w-full h-screen bg-background left-0 absolute p-4 text-primary flex flex-col items-end justify-start">
+      <span className="flex flex-col pt-10 gap-20 items-end text-primary text-2xl font-bold">
         <Link href={'/'} onClick={() => setIsOpen(false)}>
-          Sobre
+          Home
         </Link>
         <Link href={'/produtos'} onClick={() => setIsOpen(false)}>
-          Produtos
+          Projects
         </Link>
         <Link href={'/encomendas'} onClick={() => setIsOpen(false)}>
-          Encomendas
+          Contact
         </Link>
       </span>
     </div>

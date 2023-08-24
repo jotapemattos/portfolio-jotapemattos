@@ -6,7 +6,7 @@ import MobileMenu from './MobileMenu';
 
 const HamburguerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const genericHamburgerLine = `h-[2px] w-8 my-1 bg-white transition ease transform duration-300`;
+  const genericHamburgerLine = `h-[2px] w-8 my-1 bg-primary transition ease transform duration-300`;
 
   return (
     <div className="w-auto lg:hidden p-4 lg:p-12">
