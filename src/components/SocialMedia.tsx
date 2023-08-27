@@ -1,14 +1,11 @@
 'use client';
 
 import { getIconColors } from '@/utils/functions/pickColor';
-import {
-  IconBrandGithub,
-  IconBrandLinkedin,
-  IconMail
-} from '@tabler/icons-react';
 
 import { motion as m } from 'framer-motion';
 import { useTheme } from 'next-themes';
+
+import { GithubIcon, LinkedinIcon, Mail } from 'lucide-react';
 
 type Theme = 'dark' | 'light';
 
@@ -17,58 +14,67 @@ const SocialMedia = () => {
   const iconColor = getIconColors(theme as Theme);
 
   return (
-    <aside className="w-full lg:w-fit h-full flex justify-end lg:fixed lg:top-0 lg:right-10 xl:right-24">
-      <div className="flex lg:flex-col items-center justify-end gap-8">
-        <m.a
-          initial={{ y: '50vh', opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.7 }}
+    <div className="flex items-center justify-end gap-6">
+      <m.span
+        initial={{ y: '2vh', opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.3 }}
+        className="bg-gradient-to-tl from-background to-primary/30 rounded-full p-[0.5px] group"
+      >
+        <a
           href="https://github.com/jotapemattos"
           target="_blank"
+          className="rounded-full flex items-center justify-center p-[12px] bg-background hover:bg-background/90"
+          rel="noreferrer"
         >
-          <IconBrandGithub
-            size={28}
+          <GithubIcon
+            className="group-hover:stroke-slate-600 transition-colors duration-300"
             color={iconColor}
-            className="hover:-translate-y-1 hover:text-secondary hover:scale-110 transition-all duration-300"
+            size={18}
           />
-        </m.a>
+        </a>
+      </m.span>
 
-        <m.a
-          initial={{ y: '50vh', opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.9 }}
-          href="https://www.linkedin.com/in/jo%C3%A3o-pedro-mattos-rodrigues-camargo-23b52a25b/"
+      <m.span
+        initial={{ y: '2vh', opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.4 }}
+        className="bg-gradient-to-tl from-background to-primary/30 rounded-full p-[0.5px] group"
+      >
+        <a
+          href="https://www.linkedin.com/in/jo%C3%A3o-pedro-mattos-rodrigues-camargo-183b518a25b/"
           target="_blank"
+          className="rounded-full flex items-center justify-center p-[12px] bg-background group-hover:bg-background/90"
+          rel="noreferrer"
         >
-          <IconBrandLinkedin
-            size={28}
+          <LinkedinIcon
             color={iconColor}
-            className=" hover:-translate-y-1 hover:text-secondary hover:scale-110 transition-all duration-300"
+            size={18}
+            className="group-hover:stroke-blue-500 transition-colors duration-300"
           />
-        </m.a>
+        </a>
+      </m.span>
 
-        <m.a
-          initial={{ y: '50vh', opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1.1 }}
+      <m.span
+        initial={{ y: '2vh', opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="bg-gradient-to-tl from-background to-primary/30 rounded-full p-[0.3px] group"
+      >
+        <a
           href="mailto:jpmrc49@gmail.com"
           target="_blank"
+          className="rounded-full flex items-center justify-center p-[12px] bg-background hover:bg-background/90"
+          rel="noreferrer"
         >
-          <IconMail
-            size={28}
+          <Mail
             color={iconColor}
-            className="hover:-translate-y-1 hover:text-tertiary hover:scale-110 transition-all duration-300"
+            size={18}
+            className="group-hover:stroke-yellow-600 dark:group-hover:stroke-yellow-400 transition-colors duration-300"
           />
-        </m.a>
-
-        <m.div
-          initial={{ height: '0px', opacity: 0 }}
-          animate={{ height: '112px', opacity: 1 }}
-          transition={{ duration: 0.5 }}
-          className="w-px hidden lg:flex h-28 bg-primary"
-        ></m.div>
-      </div>
-    </aside>
+        </a>
+      </m.span>
+    </div>
   );
 };
 
