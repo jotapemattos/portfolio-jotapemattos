@@ -3,13 +3,14 @@
 import { motion as m } from 'framer-motion';
 import { Button } from '../ui/Button';
 import { calculateAge } from '@/utils/functions/calculateAge';
+import Link from 'next/link';
 
 export const MainContent = () => {
   const age = calculateAge();
 
   return (
-    <main className="w-full min-h-full flex flex-col items-center justify-center">
-      <div className="w-[1300px] h-fit flex flex-col items-start gap-6">
+    <main className="w-full min-h-full h-screen flex flex-col items-center justify-center relative">
+      <div className="w-[1300px] h-fit flex flex-col items-start gap-4">
         <m.h1
           initial={{ opacity: 0, y: 5 }}
           animate={{ opacity: 1, y: 0 }}
@@ -33,15 +34,27 @@ export const MainContent = () => {
             initial={{ opacity: 0, y: 5 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.2, delay: 0.6 }}
-            className="text-xl md:text-2xl text-primary font w-4/5 md:w-auto"
+            className="text-xl md:text-xl text-primary font w-4/5 md:w-auto"
           >
-            Make yourself comfortable to explore my space on the web.
+            Making code & design dancing in harmony.
           </m.h3>
-          <a href="/resume.pdf" target="_blank">
-            <Button variant="default" size="lg" className="">
-              Check out my resume!
-            </Button>
-          </a>
+          <m.div
+            initial={{ opacity: 0, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="flex items-center gap-6"
+          >
+            <a href="/resume.pdf" target="_blank">
+              <Button variant="default" size="lg">
+                Check out my resume!
+              </Button>
+            </a>
+            <Link href="#about">
+              <Button variant="outline" size="default" className="h-11">
+                About me
+              </Button>
+            </Link>
+          </m.div>
         </span>
       </div>
     </main>
