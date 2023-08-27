@@ -4,6 +4,8 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/ui/ThemeProvider';
 import NavBar from '@/components/NavBar/NavBar';
+import Texture from '@/components/Texture';
+import Gradient from '@/components/Gradient';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,11 +24,14 @@ export default function RootLayout({
       <body
         className={cn(
           inter.className,
-          'min-w-screen min-h-screen bg-background'
+          'min-w-screen min-h-screen bg-background bg-[url(../assets/grid.svg)] bg-center'
         )}
+        suppressHydrationWarning={true}
       >
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <NavBar />
+          <Gradient />
+          <Texture />
           {children}
         </ThemeProvider>
       </body>
