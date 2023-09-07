@@ -42,7 +42,7 @@ const SocialMedia = () => {
         className="bg-gradient-to-tl from-background to-primary/30 rounded-full p-[0.5px] group"
       >
         <a
-          href="https://www.linkedin.com/in/jo%C3%A3o-pedro-mattos-rodrigues-camargo-183b518a25b/"
+          href="https://www.linkedin.com/in/jo%C3%A3o-pedro-mattos-rodrigues-camargo/"
           target="_blank"
           className="rounded-full flex items-center justify-center p-[12px] bg-background group-hover:bg-background/90"
           rel="noreferrer"
