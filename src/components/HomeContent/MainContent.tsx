@@ -9,8 +9,8 @@ export const MainContent = () => {
   const age = calculateAge();
 
   return (
-    <main className="w-full min-h-full h-screen flex flex-col items-center justify-center relative">
-      <div className="w-[1300px] h-fit flex flex-col items-start gap-4">
+    <main className="w-full min-h-full h-screen flex flex-col items-center justify-center relative bg-[url(../assets/grid.svg)] bg-center">
+      <div className="w-[1300px] h-fit flex flex-col items-start gap-4 ">
         <m.h1
           initial={{ opacity: 0, y: 5 }}
           animate={{ opacity: 1, y: 0 }}
