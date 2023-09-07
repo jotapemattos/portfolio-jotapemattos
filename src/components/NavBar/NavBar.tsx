@@ -2,15 +2,18 @@
 
 import Link from 'next/link';
 import { ThemeToggle } from '../ui/ThemeToggle';
-import HamburguerMenu from './HamburguerMenu';
 import { FolderOpenDot, Home, User2 } from 'lucide-react';
 import { Button } from '../ui/Button';
 import SocialMedia from '../SocialMedia';
 
 const NavBar = () => {
+  const handleClick = () => {
+    window.scroll(0, 0);
+  };
+
   return (
-    <div className="w-full h-24 flex items-center justify-between p-2 md:p-10 fixed z-10 inset-">
-      <Link href="/" className="w-1/3">
+    <header className="w-full h-24 flex items-center justify-between p-2 md:p-10 fixed z-10 inset-0 backdrop-blur-sm">
+      <Link href="/" className="w-1/3" onClick={handleClick}>
         <img src="/logo-withoutbg.svg" alt="logo-image" className="w-8 h-8" />
       </Link>
       <nav className="w-full md:w-4/5 lg:w-fit xl:w-fit h-14 flex items-center justify-center p-6 text-primary bg-background/30 bg-opacity-10 backdrop-blur-sm rounded-full drop-shadow-lg border border-border">
@@ -18,6 +21,7 @@ const NavBar = () => {
           <Button
             variant="ghost"
             className="flex items-center justify-center gap-2 font-bold"
+            onClick={handleClick}
           >
             <Home size={16} />
             Home
@@ -32,7 +36,7 @@ const NavBar = () => {
             Projects
           </Button>
         </Link>
-        <Link href="#contact">
+        <Link href="/#contact">
           <Button
             variant="ghost"
             className="flex items-center justify-center gap-2 font-bold"
@@ -41,17 +45,12 @@ const NavBar = () => {
             Contact
           </Button>
         </Link>
-
         <ThemeToggle />
-        <div className="flex items-center lg:hidden">
-          <ThemeToggle />
-          <HamburguerMenu />
-        </div>
       </nav>
-      <section className=" w-1/3">
+      <section className=" w-1/3 hidden md:block">
         <SocialMedia />
       </section>
-    </div>
+    </header>
   );
 };
 
