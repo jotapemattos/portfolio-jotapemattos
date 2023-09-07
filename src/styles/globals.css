@@ -7,6 +7,22 @@ html {
 }
 
 
+body::-webkit-scrollbar {
+  background-color: #27272a;
+  width: 16px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #27272a;
+}
+
+
+body::-webkit-scrollbar-thumb {
+  background-color: #71717a;
+  border-radius: 16px;
+  border: 4px solid #27272a;
+}
+
 @layer base {
   :root {
     --background: 240 2% 85%;
@@ -27,7 +43,7 @@ html {
     --destructive-foreground: 0 0% 98%;
 
     --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
+    --input: 240 3.7% 15.9%;
     --ring: 240 10% 3.9%;
  
     --radius: 0.5rem;
@@ -62,8 +78,18 @@ html {
     @apply border-border;
   }
   body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "cv11", "salt", "ss01", "ss03", "cv01", "cv02", "cv03", "cv04", "cv05", "cv06", "cv09", "cv10";
     @apply bg-background ;
   }
+}
+
+.about {
+  background: 
+  linear-gradient(3deg,hsl(var(--background)) 50%,hsl(var(--background)/.75) 66%,hsl(var(--background)/.5) 77%,transparent 100%),
+  linear-gradient(225deg,rgba(3, 210, 221,0) 44.51%,rgba(0, 193, 252, 0.17) 75.5%,rgba(44, 134, 230, 0.1) 100%);
 }
 
 
