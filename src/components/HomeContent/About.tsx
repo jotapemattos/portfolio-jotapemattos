@@ -5,12 +5,13 @@ import { HoverCard, HoverCardContent, HoverCardTrigger } from '../ui/HoverCard';
 import ToolsCards from './ToolsCards';
 import ifsp from '../../assets/ifsp.svg';
 import Gradient from '../Gradient';
+import { ToolsProps, tools } from '@/data/tools';
 
 const About = () => {
   return (
     <div
       id="about"
-      className="about w-full max-h-full flex items-center justify-center p-8 bg-background overflow-hidden relative"
+      className="w-full max-h-full flex items-center justify-center p-8 bg-background overflow-hidden relative"
     >
       <div className="w-[1300px] flex flex-col gap-20 relative">
         <section className="w-full h-fit flex flex-col items-start justify-center gap-10 text-justify">
@@ -65,12 +66,14 @@ const About = () => {
         </section>
         <section className="w-full h-full flex flex-col items-start justify-center gap-4 relative z-50">
           <h1 className="font-bold text-primary text-3xl">Stack</h1>
-          <div className="grid grid-cols-3 gap-6 ">
-            <ToolsCards />
+          <div className="flex gap-6 ">
+            {tools.map((tool: ToolsProps, i) => (
+              <ToolsCards tool={tool} key={i} index={i} />
+            ))}
           </div>
         </section>
       </div>
-      <Gradient className="absolute bottom-0 right-1/2 translate-y-2/3 translate-x-1/2 bg-secondary h-[200px] w-[650px] rounded-full opacity-25 blur-3xl" />
+      <Gradient className="absolute bottom-0 right-1/2 translate-y-2/3 translate-x-1/2 bg-secondary h-[200px] w-[650px] rounded-full opacity-60 blur-3xl" />
     </div>
   );
 };
