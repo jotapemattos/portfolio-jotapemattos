@@ -4,6 +4,13 @@ import movieDb from '../assets/mymoviedb.svg';
 import cryptoCorner from '../assets/crypto-corner.svg';
 import pomodoro from '../assets/pomodoro.svg';
 
+import ts from '../assets/ts.svg';
+import react from '../assets/react.svg';
+import next from '../assets/next.svg';
+import tailwind from '../assets/tailwind.svg';
+
+import { ToolsProps } from './tools';
+
 export interface ProjectsProps {
   id: number;
   name: string;
@@ -11,7 +18,7 @@ export interface ProjectsProps {
   image: string;
   githubRepo: string;
   website: string;
-  techs: string;
+  techs: ToolsProps[];
 }
 
 export const projects: ProjectsProps[] = [
@@ -23,7 +30,11 @@ export const projects: ProjectsProps[] = [
     image: portfolio,
     githubRepo: 'https://github.com/jotapemattos/portfolio-jotapemattos',
     website: 'https://jotapemattos-portfolio.vercel.app/',
-    techs: ''
+    techs: [
+      { name: 'Next.js', image: next },
+      { name: 'TypeScript', image: ts },
+      { name: 'Tailwind CSS', image: tailwind }
+    ]
   },
   {
     id: 2,
@@ -33,7 +44,11 @@ export const projects: ProjectsProps[] = [
     image: saborComAmor,
     githubRepo: 'https://github.com/jotapemattos/sabor-com-amor',
     website: 'https://saborcomamor.vercel.app/',
-    techs: ''
+    techs: [
+      { name: 'Next.js', image: next },
+      { name: 'TypeScript', image: ts },
+      { name: 'Tailwind CSS', image: tailwind }
+    ]
   },
   {
     id: 3,
@@ -43,7 +58,11 @@ export const projects: ProjectsProps[] = [
     image: movieDb,
     githubRepo: 'https://github.com/jotapemattos/mymdb',
     website: 'https://mymoviedb.vercel.app/',
-    techs: ''
+    techs: [
+      { name: 'React.js', image: react },
+      { name: 'TypeScript', image: ts },
+      { name: 'Tailwind CSS', image: tailwind }
+    ]
   },
   {
     id: 4,
@@ -53,7 +72,11 @@ export const projects: ProjectsProps[] = [
     image: cryptoCorner,
     githubRepo: 'https://github.com/jotapemattos/crypto-infos',
     website: 'https://crypto-infos.vercel.app/',
-    techs: ''
+    techs: [
+      { name: 'React.js', image: react },
+      { name: 'TypeScript', image: ts },
+      { name: 'Tailwind CSS', image: tailwind }
+    ]
   },
   {
     id: 5,
@@ -63,6 +86,10 @@ export const projects: ProjectsProps[] = [
     image: pomodoro,
     githubRepo: 'https://github.com/jotapemattos/pomodoro-app',
     website: 'https://pomodoro-app-liart.vercel.app/',
-    techs: ''
+    techs: [
+      { name: 'React.js', image: react },
+      { name: 'TypeScript', image: ts },
+      { name: 'Tailwind CSS', image: tailwind }
+    ]
   }
 ];
