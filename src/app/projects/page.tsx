@@ -2,10 +2,10 @@ import { ProjectCards } from '@/components/Projects/ProjectCards';
 
 const page = () => {
   return (
-    <div className="w-full min-h-full flex items-center justify-center pt-40 pb-20">
-      <main className="w-1/2 h-full flex flex-col items-start gap-20">
+    <main className="w-full min-h-full flex items-center justify-center pt-40 pb-20">
+      <div className="w-1/2 h-full flex flex-col items-start gap-20">
         <section className="space-y-4">
-          <h2 className="font-bold text-primary text-3xl">Projects</h2>
+          <h1 className="font-bold text-primary text-3xl">Projects</h1>
           <p className="text-primary">
             Here you can find some of what I&apos;m capable to do. These are
             projects that I put a lot of effort into, and through the code, they
@@ -15,8 +15,8 @@ const page = () => {
         <section className="w-full space-y-10">
           <ProjectCards />
         </section>
-      </main>
-    </div>
+      </div>
+    </main>
   );
 };
 
