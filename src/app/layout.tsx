@@ -6,7 +6,7 @@ import { ThemeProvider } from '@/components/ui/ThemeProvider';
 import NavBar from '@/components/NavBar/NavBar';
 
 import Gradient from '@/components/Gradient';
-import { Toaster } from '@/components/ui/toaster';
+import { Toaster } from '@/components/ui/Toaster';
 
 const inter = Inter({ subsets: ['latin'] });
 
