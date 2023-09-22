@@ -18,7 +18,7 @@ const Contact = () => {
     <>
       <div
         id="contact"
-        className="contact w-full max-h-full flex flex-col items-center justify-center gap-16 pt-20 pb-10"
+        className="w-full max-h-full flex flex-col items-center justify-center gap-16 pt-20 pb-10"
       >
         <span className="flex flex-col items-center justify-center gap-4">
           <p>Do you have an idea you want to get off the ground?</p>
