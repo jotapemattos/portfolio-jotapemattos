@@ -24,7 +24,7 @@ const SocialMedia = () => {
         <a
           href="https://github.com/jotapemattos"
           target="_blank"
-          className="rounded-full flex items-center justify-center p-[12px] bg-background hover:bg-background/90"
+          className="rounded-full flex items-center justify-center p-[12px] bg-background group-hover:bg-background/90"
           rel="noreferrer"
         >
           <GithubIcon
@@ -64,7 +64,7 @@ const SocialMedia = () => {
         <a
           href="mailto:jpmrc49@gmail.com"
           target="_blank"
-          className="rounded-full flex items-center justify-center p-[12px] bg-background hover:bg-background/90"
+          className="rounded-full flex items-center justify-center p-[12px] bg-background group-hover:bg-background/90"
           rel="noreferrer"
         >
           <Mail
