@@ -10,48 +10,39 @@ import git from '../assets/git.svg';
 export interface ToolsProps {
   name: string;
   image: string;
-  linkToDocs: string;
 }
 
 export const tools: ToolsProps[] = [
   {
     name: 'Html',
-    image: html,
-    linkToDocs: ''
+    image: html
   },
   {
     name: 'CSS',
-    image: css,
-    linkToDocs: ''
+    image: css
   },
   {
     name: 'JavaScript',
-    image: js,
-    linkToDocs: ''
+    image: js
   },
   {
     name: 'TypeScript',
-    image: ts,
-    linkToDocs: ''
+    image: ts
   },
   {
     name: 'React.js',
-    image: react,
-    linkToDocs: ''
+    image: react
   },
   {
     name: 'Next.js',
-    image: next,
-    linkToDocs: ''
+    image: next
   },
   {
     name: 'Tailwind CSS',
-    image: tailwind,
-    linkToDocs: ''
+    image: tailwind
   },
   {
     name: 'Git',
-    image: git,
-    linkToDocs: ''
+    image: git
   }
 ];
