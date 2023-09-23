@@ -7,5 +7,7 @@ interface singleProjectProps {
 }
 
 export const ProjectImagesCarousel = (singleProject: singleProjectProps) => {
-  return <div className="w-full h-full"></div>;
+  return (
+    <div className="w-full h-full">{singleProject.singleProject.name}</div>
+  );
 };
