@@ -82,3 +82,8 @@ body::-webkit-scrollbar-thumb {
     @apply bg-background;
   }
 }
+
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
