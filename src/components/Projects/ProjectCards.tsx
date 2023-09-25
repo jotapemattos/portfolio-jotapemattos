@@ -12,7 +12,7 @@ export const ProjectCards = () => {
           href={`/projects/${project.id}`}
         >
           <section className="w-full h-full">
-            <Image src={project.image} alt={project.name + 'image'} />
+            <Image src={project.thumbnail} alt={project.name + 'image'} />
           </section>
           <section className="w-full h-full flex flex-col justify-between items-end p-4 text-primary">
             <h1 className="text-xl font-bold">
