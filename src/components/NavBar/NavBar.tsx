@@ -20,7 +20,7 @@ const NavBar = () => {
         <Link onClick={() => window.scroll(0, 0)} href={'/'}>
           <Button
             variant="ghost"
-            className="flex items-center justify-center gap-2 font-bold"
+            className="flex items-center justify-center gap-2 font-medium"
             onClick={handleClick}
           >
             <Home size={16} />
@@ -30,7 +30,7 @@ const NavBar = () => {
         <Link href="/projects">
           <Button
             variant="ghost"
-            className="flex items-center justify-center gap-2 font-bold"
+            className="flex items-center justify-center gap-2 font-medium"
           >
             <FolderOpenDot size={16} />
             Projects
@@ -39,7 +39,7 @@ const NavBar = () => {
         <Link href="/#contact">
           <Button
             variant="ghost"
-            className="flex items-center justify-center gap-2 font-bold"
+            className="flex items-center justify-center gap-2 font-medium"
           >
             <User2 size={16} />
             Contact
