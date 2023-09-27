@@ -4,13 +4,15 @@ import { motion as m } from 'framer-motion';
 import { Button } from '../ui/Button';
 import { calculateAge } from '@/utils/functions/calculateAge';
 import Link from 'next/link';
+import { ArrowDown } from 'lucide-react';
 
 export const MainContent = () => {
   const age = calculateAge();
 
   return (
-    <main className="w-full min-h-full h-screen flex flex-col items-center justify-center relative bg-[url(../assets/grid.svg)] bg-center">
-      <div className="w-[1300px] h-fit flex flex-col items-start gap-4 ">
+    <main className="w-full min-h-full h-screen flex flex-col items-center justify-center relative ">
+      <span className="main-content w-full h-full relative rounded-lg dark:opacity-30" />
+      <div className="absolute w-[1300px] h-fit flex flex-col items-start gap-4">
         <m.h1
           initial={{ opacity: 0, y: 5 }}
           animate={{ opacity: 1, y: 0 }}
@@ -50,8 +52,13 @@ export const MainContent = () => {
               </Button>
             </a>
             <Link href="#about">
-              <Button variant="outline" size="default" className="h-11">
+              <Button
+                variant="outline"
+                size="default"
+                className="flex items-center h-11 gap-2"
+              >
                 About me
+                <ArrowDown size={18} />
               </Button>
             </Link>
           </m.div>
