@@ -19,7 +19,7 @@ const SocialMedia = () => {
         initial={{ y: '2vh', opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.3 }}
-        className="bg-gradient-to-tl from-background to-primary/30 rounded-full p-[0.5px] group"
+        className="bg-gradient-to-tl from-background to-primary/20 rounded-full p-[0.5px] group"
       >
         <a
           href="https://github.com/jotapemattos"
@@ -39,7 +39,7 @@ const SocialMedia = () => {
         initial={{ y: '2vh', opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.4 }}
-        className="bg-gradient-to-tl from-background to-primary/30 rounded-full p-[0.5px] group"
+        className="bg-gradient-to-tl from-background to-primary/20 rounded-full p-[0.5px] group"
       >
         <a
           href="https://www.linkedin.com/in/jo%C3%A3o-pedro-mattos-rodrigues-camargo/"
@@ -59,7 +59,7 @@ const SocialMedia = () => {
         initial={{ y: '2vh', opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="bg-gradient-to-tl from-background to-primary/30 rounded-full p-[0.3px] group"
+        className="bg-gradient-to-tl from-background to-primary/20 rounded-full p-[0.3px] group"
       >
         <a
           href="https://twitter.com/devjotape"
