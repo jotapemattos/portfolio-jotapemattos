@@ -12,12 +12,12 @@ export const MainContent = () => {
   return (
     <main className="w-full min-h-full h-screen flex flex-col items-center justify-center relative ">
       <span className="main-content w-full h-full relative rounded-lg dark:opacity-30" />
-      <div className="absolute w-[1300px] h-fit flex flex-col items-start gap-4">
+      <div className="absolute w-full xl:w-[1300px] h-fit p-4 xl:p-0 flex flex-col xl:items-start gap-4">
         <m.h1
           initial={{ opacity: 0, y: 5 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.2, delay: 0.2 }}
-          className="text-5xl md:text-5xl font-extrabold w-5/6 md:w-full text-transparent bg-clip-text bg-gradient-to-r from-secondary to-tertiary"
+          className="text-4xl lg:text-5xl font-extrabold w-full text-transparent bg-clip-text bg-gradient-to-r from-secondary to-tertiary"
         >
           Hi there, João Pedro here.
         </m.h1>
@@ -26,7 +26,7 @@ export const MainContent = () => {
           initial={{ opacity: 0, y: 5 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.2, delay: 0.4 }}
-          className="text-3xl md:text-3xl text-primary font-bold w-4/5 md:w-full"
+          className="text-2xl lg:text-3xl text-primary font-bold w-full"
         >
           I&apos;m a {age} years old Front-end Developer from 🇧🇷 Brazil.
         </m.h2>
@@ -36,7 +36,7 @@ export const MainContent = () => {
             initial={{ opacity: 0, y: 5 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.2, delay: 0.6 }}
-            className="text-xl md:text-xl text-primary font w-4/5 md:w-auto"
+            className="text-lg lg:text-xl text-primary w-full"
           >
             Making code & design dancing in harmony.
           </m.h3>

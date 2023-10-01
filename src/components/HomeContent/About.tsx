@@ -11,16 +11,16 @@ const About = () => {
   return (
     <div
       id="about"
-      className="w-full max-h-full flex items-center justify-center p-8 bg-background overflow-hidden relative"
+      className="w-full max-h-full flex items-center justify-center p-4 md:p-8 bg-background overflow-hidden relative"
     >
-      <div className="w-[1300px] flex flex-col gap-20 relative">
-        <section className="w-full h-fit flex flex-col items-start justify-center gap-10 text-justify">
+      <div className="w-full xl:w-[1300px] flex flex-col gap-20 relative">
+        <section className="w-full h-fit flex flex-col items-start justify-center gap-10">
           <h1 className="font-bold text-primary text-3xl">
             Introducing myself
           </h1>
           <article className="flex flex-col h-auto items-start gap-2">
             <h2 className="font-bold text-primary text-2xl">How I started?</h2>
-            <p>
+            <p className="text-justify">
               The genesis of my software engineering journey began with a
               pivotal moment in early 2022 when a friend introduced me to the
               profound capabilities of a software engineer. At the time, I
@@ -43,10 +43,9 @@ const About = () => {
               Additionally, I am always eager to embrace and learn from emerging
               technologies.
             </p>
-            <p className="flex items-center gap-1">
-              {' '}
+            <p className="space-x-2">
               Presently, I am in the process of completing my education,
-              pursuing a degree in Systems Analysis and Development at
+              pursuing a degree in Systems Analysis and Development at{' '}
               <HoverCard>
                 <HoverCardTrigger
                   href="https://www.ifsp.edu.br/"
@@ -66,14 +65,14 @@ const About = () => {
         </section>
         <section className="w-full h-full flex flex-col items-start justify-center gap-4 relative z-50">
           <h1 className="font-bold text-primary text-3xl">Stack</h1>
-          <div className="flex gap-6 ">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:flex gap-6 ">
             {tools.map((tool: ToolsProps, i) => (
               <ToolsCards tool={tool} key={i} index={i} />
             ))}
           </div>
         </section>
       </div>
-      <Gradient className="absolute bottom-0 right-1/2 translate-y-2/3 translate-x-1/2 bg-secondary h-[200px] w-[650px] rounded-full opacity-60 blur-3xl" />
+      <Gradient className="absolute bottom-0 right-1/2 translate-y-2/3 translate-x-1/2 bg-secondary h-[200px] w-[250px] md:w-[650px] rounded-full opacity-60 blur-3xl" />
     </div>
   );
 };
