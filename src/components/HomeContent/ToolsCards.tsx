@@ -16,7 +16,7 @@ const ToolsCards = ({ tool, index }: ToolCardProps) => {
     >
       <span
         className={cn(
-          'fixed top-0 right-3 h-4 w-12 rounded-3xl bg-transparent opacity-90 blur-2xl',
+          'absolute top-0 right-3 h-4 w-12 rounded-3xl bg-transparent opacity-90 blur-2xl',
           getHoverColor(tool.name.toLowerCase() as Tech)
         )}
       />
