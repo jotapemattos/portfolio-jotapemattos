@@ -12,7 +12,7 @@ const NavBar = () => {
   };
 
   return (
-    <header className="w-full h-24 flex items-center justify-between gap-4 md:gap-0 p-2 md:p-10 fixed z-10 inset-0 backdrop-blur-sm">
+    <header className="w-full h-24 flex items-center justify-between gap-4 md:gap-0 p-2 md:p-10 fixed z-50 inset-0 backdrop-blur-sm">
       <Link href="/" className="lg:w-1/3 hidden md:block" onClick={handleClick}>
         <img src="/logo-withoutbg.svg" alt="logo-image" className="w-8 h-8" />
       </Link>
