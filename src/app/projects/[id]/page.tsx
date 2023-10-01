@@ -18,13 +18,13 @@ const page = ({ params }: SlugProps) => {
   );
 
   return (
-    <main className="w-full min-h-full flex items-center justify-center pt-40 pb-20">
-      <div className="w-1/2 h-full flex flex-col items-start gap-6">
-        <header className="w-full flex items-center justify-between">
-          <h1 className="text-3xl font-bold">
+    <main className="w-full min-h-full flex items-center justify-center pt-40 pb-20 px-4 md:px-0">
+      <div className="w-full md:w-3/4 xl:w-1/2 h-full flex flex-col items-start gap-6">
+        <header className="w-full flex flex-col md:flex-row gap-2 md:items-center justify-between">
+          <h1 className="text-2xl md:text-3xl font-bold">
             0{singleProject.id}. {singleProject.name}
           </h1>
-          <span className="flex items-center gap-6">
+          <span className="w-full md:w-fit flex items-center justify-between gap-6">
             <Link href={singleProject.githubRepo} target="_blank">
               <Button
                 variant="outline"
@@ -37,9 +37,9 @@ const page = ({ params }: SlugProps) => {
             <Link href={singleProject.website} target="_blank">
               <Button
                 variant="outline"
-                className="flex items-center gap-2 hover:text-tertiary transition-colors duration-300"
+                className="flex items-center gap-2 hover:text-primary/75 transition-colors duration-300"
               >
-                Deployed project
+                Live project
                 <ArrowUpRight size={18} />
               </Button>
             </Link>
@@ -52,7 +52,7 @@ const page = ({ params }: SlugProps) => {
         </article>
         <span className="space-y-4">
           <h2 className="text-2xl font-bold italic">Stack</h2>
-          <section className="w-full flex gap-6">
+          <section className="w-full grid grid-cols-2 md:flex gap-6">
             {singleProject.techs.map((tech, i) => (
               <ToolsCards key={i} tool={tech} index={i} />
             ))}
