@@ -2,8 +2,8 @@ import { ProjectCards } from '@/components/Projects/ProjectCards';
 
 const page = () => {
   return (
-    <main className="w-full min-h-full flex items-center justify-center pt-40 pb-20">
-      <div className="w-full md:w-1/2 h-full flex flex-col items-start gap-20 p-4 sm:p-0">
+    <main className="w-full min-h-full flex items-center justify-center pt-40 pb-20 px-10">
+      <div className="w-full lg:w-3/4 xl:w-1/2 h-full flex flex-col items-start gap-20 p-4 sm:p-0">
         <section className="space-y-4">
           <h1 className="font-bold text-primary text-3xl">Projects</h1>
           <p className="text-primary text-justify">
