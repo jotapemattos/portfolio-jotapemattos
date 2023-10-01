@@ -3,6 +3,7 @@
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Copy, Send } from 'lucide-react';
 import { useToast } from '../../hooks/use-toast';
+import SocialMedia from '../SocialMedia';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -18,11 +19,11 @@ const Contact = () => {
     <>
       <div
         id="contact"
-        className="w-full max-h-full flex flex-col items-center justify-center gap-16 pt-20 pb-10"
+        className="w-full max-h-full flex flex-col items-center justify-center gap-16 px-2 pt-10 md:px-0 md:pt-20 pb-10"
       >
-        <span className="flex flex-col items-center justify-center gap-4">
+        <span className="flex flex-col items-center justify-center text-center md:text-justify gap-4">
           <p>Do you have an idea you want to get off the ground?</p>
-          <h1 className="text-primary text-3xl font-bold">
+          <h1 className="text-primary text-2xl md:text-3xl font-bold">
             Let&apos;s talk about it
           </h1>
         </span>
@@ -35,6 +36,9 @@ const Contact = () => {
             <Send size={18} />
           </a>
         </span>
+        <div className="md:hidden">
+          <SocialMedia />
+        </div>
       </div>
     </>
   );
