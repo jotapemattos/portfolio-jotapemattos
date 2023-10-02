@@ -38,7 +38,7 @@ export const tools: ToolsProps[] = [
     image: next
   },
   {
-    name: 'Tailwind CSS',
+    name: 'Tailwind',
     image: tailwind
   },
   {
