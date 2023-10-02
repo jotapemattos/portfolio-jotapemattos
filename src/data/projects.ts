@@ -70,7 +70,7 @@ export const projects: ProjectsProps[] = [
     techs: [
       { name: 'Next.js', image: next },
       { name: 'TypeScript', image: ts },
-      { name: 'Tailwind CSS', image: tailwind }
+      { name: 'Tailwind', image: tailwind }
     ]
   },
   {
@@ -85,7 +85,7 @@ export const projects: ProjectsProps[] = [
     techs: [
       { name: 'Next.js', image: next },
       { name: 'TypeScript', image: ts },
-      { name: 'Tailwind CSS', image: tailwind }
+      { name: 'Tailwind', image: tailwind }
     ]
   },
   {
@@ -100,7 +100,7 @@ export const projects: ProjectsProps[] = [
     techs: [
       { name: 'React.js', image: react },
       { name: 'TypeScript', image: ts },
-      { name: 'Tailwind CSS', image: tailwind }
+      { name: 'Tailwind', image: tailwind }
     ]
   },
   {
@@ -115,7 +115,7 @@ export const projects: ProjectsProps[] = [
     techs: [
       { name: 'React.js', image: react },
       { name: 'TypeScript', image: ts },
-      { name: 'Tailwind CSS', image: tailwind }
+      { name: 'Tailwind', image: tailwind }
     ]
   },
   {
@@ -130,7 +130,7 @@ export const projects: ProjectsProps[] = [
     techs: [
       { name: 'React.js', image: react },
       { name: 'TypeScript', image: ts },
-      { name: 'Tailwind CSS', image: tailwind }
+      { name: 'Tailwind', image: tailwind }
     ]
   }
 ];
