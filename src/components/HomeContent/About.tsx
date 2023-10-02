@@ -63,7 +63,7 @@ const About = () => {
             <br />
           </article>
         </section>
-        <section className="w-full h-full flex flex-col items-start justify-center gap-4 relative z-50">
+        <section className="w-full h-full flex flex-col items-start justify-center gap-4 relative z-10">
           <h1 className="font-bold text-primary text-3xl">Stack</h1>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:flex gap-6 ">
             {tools.map((tool: ToolsProps, i) => (
