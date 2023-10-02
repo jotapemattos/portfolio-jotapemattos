@@ -5,7 +5,7 @@ export type Tech =
   | 'typescript'
   | 'react.js'
   | 'next.js'
-  | 'tailwind css'
+  | 'tailwind'
   | 'git';
 
 const possibleColorsClassnames: Record<Tech, string> = {
@@ -15,7 +15,7 @@ const possibleColorsClassnames: Record<Tech, string> = {
   typescript: 'group-hover:bg-[#007ACC] transistion-all duration-300',
   'react.js': 'group-hover:bg-[#61DAFB] transistion-all duration-300',
   'next.js': 'group-hover:bg-[#9B9B9B] transistion-all duration-300',
-  'tailwind css': 'group-hover:bg-[#56BEB3] transistion-all duration-300',
+  tailwind: 'group-hover:bg-[#56BEB3] transistion-all duration-300',
   git: 'group-hover:bg-[#F05033] transistion-all duration-300'
 };
 
