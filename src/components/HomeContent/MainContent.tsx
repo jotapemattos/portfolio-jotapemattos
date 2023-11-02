@@ -4,7 +4,7 @@ import { motion as m } from 'framer-motion';
 import { Button } from '../ui/Button';
 import { calculateAge } from '@/utils/functions/calculateAge';
 import Link from 'next/link';
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, ArrowUpRight } from 'lucide-react';
 
 export const MainContent = () => {
   const age = calculateAge();
@@ -32,14 +32,26 @@ export const MainContent = () => {
         </m.h2>
 
         <span className="flex flex-col items-start gap-10">
-          <m.h3
+          <m.span
             initial={{ opacity: 0, y: 5 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.2, delay: 0.6 }}
-            className="text-lg lg:text-xl text-primary w-full"
+            className="flex items-center gap-2 text-lg text-primary w-full"
           >
-            Making code & design dancing in harmony.
-          </m.h3>
+            <h3>Building great digital experiences at</h3>
+            <Link
+              href="https://www.intranetmall.com.br/br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group hover:underline hover:decoration-blue-600 hover:text-blue-600 transition-colors duration-200 flex items-center gap"
+            >
+              @IntranetMall
+              <ArrowUpRight
+                size={22}
+                className="opacity-0 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:opacity-100 transition-all duration-300"
+              />
+            </Link>
+          </m.span>
           <m.div
             initial={{ opacity: 0, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
