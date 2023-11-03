@@ -1,4 +1,5 @@
 import { ProjectsProps, projects } from '@/data/projects';
+import formatSlug from '@/utils/functions/formatSlug';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -9,7 +10,7 @@ export const ProjectCards = () => {
         <Link
           key={project.id}
           className="w-full h-60 md:h-52 rounded-lg bg-zinc-100 dark:bg-zinc-900 backdrop-blur-md overflow-hidden grid grid-rows-2 md:grid-cols-2 gap-2 items-end border-t border-r border-primary/10 drop-shadow-[0_0_4px_rgba(49,49,49,0.2)] hover:scale-105 transition-transform duration-300"
-          href={`/projects/${project.id}`}
+          href={`/projects/${formatSlug(project.name)}`}
         >
           <section className="w-full h-full">
             <Image src={project.thumbnail} alt={project.name + 'image'} />
@@ -24,5 +25,3 @@ export const ProjectCards = () => {
     </>
   );
 };
-
-ProjectCards;
