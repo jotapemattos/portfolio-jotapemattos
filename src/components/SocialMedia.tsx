@@ -1,6 +1,6 @@
 'use client';
 
-import { getIconColors } from '@/utils/functions/pickColor';
+import { getIconColors } from '@/utils/functions/getIconColor';
 
 import { motion as m } from 'framer-motion';
 import { useTheme } from 'next-themes';
