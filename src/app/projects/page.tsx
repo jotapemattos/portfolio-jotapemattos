@@ -1,4 +1,9 @@
 import { ProjectCards } from '@/components/Projects/ProjectCards';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'João Pedro | Projects'
+};
 
 const page = () => {
   return (
