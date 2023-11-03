@@ -3,18 +3,20 @@ import { ProjectImagesCarousel } from '@/components/Projects/ProjectImagesCarous
 import { Button } from '@/components/ui/Button';
 
 import { ProjectsProps, projects } from '@/data/projects';
+import formatSlug from '@/utils/functions/formatSlug';
 import { ArrowUpRight, GithubIcon } from 'lucide-react';
 import Link from 'next/link';
 
 interface SlugProps {
   params: {
-    id: number;
+    slug: string;
   };
 }
 
 const page = ({ params }: SlugProps) => {
   const [singleProject] = projects.filter(
-    (project: ProjectsProps) => project.id === Number(params.id)
+    (project: ProjectsProps) =>
+      formatSlug(project.name) === formatSlug(params.slug)
   );
 
   return (
