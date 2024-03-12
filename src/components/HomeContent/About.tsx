@@ -1,11 +1,11 @@
 'use client';
 
+import { ToolsProps, tools } from '@/data/tools';
 import Image from 'next/image';
-import { HoverCard, HoverCardContent, HoverCardTrigger } from '../ui/HoverCard';
-import ToolsCards from './ToolsCards';
 import ifsp from '../../assets/ifsp.svg';
 import Gradient from '../Gradient';
-import { ToolsProps, tools } from '@/data/tools';
+import { HoverCard, HoverCardContent, HoverCardTrigger } from '../ui/HoverCard';
+import ToolsCards from './ToolsCards';
 
 const About = () => {
   return (
@@ -20,7 +20,7 @@ const About = () => {
           </h1>
           <article className="flex flex-col h-auto items-start gap-2">
             <h2 className="font-bold text-primary text-2xl">How I started?</h2>
-            <p className="text-justify">
+            <p className="text-justify text-zinc-300">
               The genesis of my software engineering journey began with a
               pivotal moment in early 2022 when a friend introduced me to the
               profound capabilities of a software engineer. At the time, I
@@ -33,7 +33,7 @@ const About = () => {
 
           <article className="flex flex-col h-auto items-start gap-2 ">
             <h2 className="font-bold text-primary text-2xl">Nowadays</h2>
-            <p className="text-justify">
+            <p className="text-justify text-zinc-300">
               Now I am a dedicated frontend developer, driven by a relentless
               desire to solve complex problems and continually enhance my
               knowledge. I take great pride in crafting aesthetically pleasing
@@ -43,7 +43,7 @@ const About = () => {
               Additionally, I am always eager to embrace and learn from emerging
               technologies.
             </p>
-            <p className="space-x-2">
+            <p className="text-zinc-300 space-x-2">
               Presently, I am in the process of completing my education,
               pursuing a degree in Systems Analysis and Development at{' '}
               <HoverCard>
