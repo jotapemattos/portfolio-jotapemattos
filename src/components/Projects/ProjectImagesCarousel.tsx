@@ -1,10 +1,10 @@
 'use client';
-import useEmblaCarousel from 'embla-carousel-react';
 import { ProjectsProps } from '@/data/projects';
+import useEmblaCarousel from 'embla-carousel-react';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import { useCallback } from 'react';
 import { Button } from '../ui/Button';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 interface singleProjectProps {
   singleProject: ProjectsProps;

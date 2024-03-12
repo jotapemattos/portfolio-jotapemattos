@@ -1,7 +1,7 @@
 'use client';
 
-import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Copy, Send } from 'lucide-react';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { useToast } from '../../hooks/use-toast';
 import SocialMedia from '../SocialMedia';
 

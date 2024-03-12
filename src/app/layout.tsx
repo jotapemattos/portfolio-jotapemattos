@@ -1,9 +1,9 @@
 import { cn } from '@/@lib/utils';
-import '../styles/globals.css';
+import NavBar from '@/components/NavBar/NavBar';
+import { ThemeProvider } from '@/components/ui/ThemeProvider';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { ThemeProvider } from '@/components/ui/ThemeProvider';
-import NavBar from '@/components/NavBar/NavBar';
+import '../styles/globals.css';
 
 import Gradient from '@/components/Gradient';
 import { Toaster } from '@/components/ui/Toaster';

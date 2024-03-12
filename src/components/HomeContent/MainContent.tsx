@@ -1,10 +1,10 @@
 'use client';
 
-import { motion as m } from 'framer-motion';
-import { Button } from '../ui/Button';
 import { calculateAge } from '@/utils/functions/calculateAge';
-import Link from 'next/link';
+import { motion as m } from 'framer-motion';
 import { ArrowDown, ArrowUpRight } from 'lucide-react';
+import Link from 'next/link';
+import { Button } from '../ui/Button';
 
 export const MainContent = () => {
   const age = calculateAge();
@@ -58,7 +58,7 @@ export const MainContent = () => {
             transition={{ duration: 0.6 }}
             className="flex items-center gap-6"
           >
-            <a href="/resume.pdf" target="_blank">
+            <a href="/resume.pdf" target="_blank" rel="noreferrer">
               <Button variant="default" size="lg">
                 Check out my resume!
               </Button>

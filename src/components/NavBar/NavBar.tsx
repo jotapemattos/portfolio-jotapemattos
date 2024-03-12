@@ -1,10 +1,10 @@
 'use client';
 
-import Link from 'next/link';
-import { ThemeToggle } from '../ui/ThemeToggle';
 import { FolderOpenDot, Home, User2 } from 'lucide-react';
-import { Button } from '../ui/Button';
+import Link from 'next/link';
 import SocialMedia from '../SocialMedia';
+import { Button } from '../ui/Button';
+import { ThemeToggle } from '../ui/ThemeToggle';
 
 const NavBar = () => {
   const handleClick = () => {
