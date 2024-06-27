@@ -20,7 +20,7 @@ const About = () => {
           </h1>
           <article className="flex flex-col h-auto items-start gap-2">
             <h2 className="font-bold text-primary text-2xl">How I started?</h2>
-            <p className="text-justify text-zinc-300">
+            <p className="text-justify text-zinc-800 dark:text-zinc-300">
               The genesis of my software engineering journey began with a
               pivotal moment in early 2022 when a friend introduced me to the
               profound capabilities of a software engineer. At the time, I
@@ -33,7 +33,7 @@ const About = () => {
 
           <article className="flex flex-col h-auto items-start gap-2 ">
             <h2 className="font-bold text-primary text-2xl">Nowadays</h2>
-            <p className="text-justify text-zinc-300">
+            <p className="text-justify text-zinc-800 dark:text-zinc-300">
               Now I am a dedicated frontend developer, driven by a relentless
               desire to solve complex problems and continually enhance my
               knowledge. I take great pride in crafting aesthetically pleasing
